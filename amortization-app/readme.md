@@ -1,18 +1,23 @@
 
 
+# Project
+
 amortization-app is a simple java project (gradle project)
 
 
-Project Structure:
+## Project Structure:
 
-Java source: source files are located in src/main/java
+### Java source: 
+	source files are located in src/main/java
 
 
-Tests: located in src/test/java
+### Tests: 
+	located in src/test/java
 
-Java doc: amortization-app/javadoc
+### Java doc:
+	amortization-app/javadoc
 
-Package structure:
+### Package structure:
 
 1) com.amortization.client: contain client program which is "AmortizationClient.java"
 		--> this accepts input data from user  and invokes "AmortizationSchedule.generateAmortizationSchedule"
@@ -41,20 +46,20 @@ Package structure:
 
 
 
-How to build:
+## How to build:
 
-1) gradle clean jar -- generates jar into ${projectDir}/build/lib/mortization-app-1.0.jar
+	1) gradle clean jar -- generates jar into ${projectDir}/build/lib/mortization-app-1.0.jar
 
 
-How to run the app:
+## How to run the app:
 
-1) from command line: provide the path to generated jar and execute client program
-	--> java -cp amortization-app-1.0.jar com.amortization.client.AmortizationClient
+	1) from command line: provide the path to generated jar and execute client program
+		--> java -cp amortization-app-1.0.jar com.amortization.client.AmortizationClient
 
-2) from ide (eclipse or intellij..):
-	--> right click on AmortizationClient and run as Java program.
+	2) from ide (eclipse or intellij..):
+		--> right click on AmortizationClient and run as Java program.
 
-run tests:
+### Run tests:
 
 1) from commandline: gradle clean test
 2) ide: right clieck on test package and run tests. AmortizationTestSuite : is the test suite for tests.
