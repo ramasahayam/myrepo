@@ -9,7 +9,7 @@ public class AmortizationHelper {
 
     private static final double[] borrowAmountRange = new double[] { 0.01d, 1000000000000d };
     private static final double[] aprRange = new double[] { 0.000001d, 100d };
-    private static final int[] termRange = new int[] { 1, 50 }; //changed to max 50 years
+    private static final int[] termRange = new int[] { 1, 1000000 };
     private static final double HUNDRED_D = 100d;
 
 
