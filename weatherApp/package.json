@@ -1,0 +1,32 @@
+{
+    "name": "weatherApp",
+    "version": "0.0.0",
+    "description": "Simple Weather app",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+
+    "dependencies": {
+
+        "grunt": "~0.4.4",
+        "grunt-contrib-jshint": "~0.6.0",
+        "jshint-stylish": "latest",
+        "grunt-contrib-watch": "latest",
+        "grunt-mocha-cli": "~1.0.2",
+        "expect.js": "~0.2.0",
+        "express": "^4.0.0" ,
+        "jade":"*" ,
+        "grunt-express":"*" ,
+        "supertest" : "0.4.0",
+        "node-rest-client":"*",
+        "express-validator":"*",
+        "nock":"*"
+
+
+
+    },
+
+    "author": "Naren",
+    "license": "none"
+}

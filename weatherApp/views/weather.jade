@@ -1,0 +1,46 @@
+doctype
+html
+    head
+        title #{title}
+    body
+
+    h1.
+        Weather Report
+    div
+    table(widht="100%", cellpadding="1", cellspacing="2", border="1")
+       thead
+            tr
+                th City
+                th State
+                th Zip
+                th Temperature ºF (ºC)
+                th Feels like  ºF (ºC)
+                th Relative Humidity
+                th Condition
+
+        tbody
+            - for (var i=0; i<result.length; i++)
+             tr
+                     -var item = result[i];
+                     - var status =item.statusCode;
+
+                        - var weatherData =JSON.parse( item.data);
+                        - var current_observation = weatherData.current_observation;
+                        - var display_location  = current_observation.display_location;
+                            - var observation_location = current_observation.observation_location;
+                  td #{display_location.city]
+                  td #{display_location.state]
+                  td #{display_location.zip}
+                  td #{current_observation.temperature_string}
+                  td #{current_observation.feelslike_string}
+                  td #{current_observation.relative_humidity}
+                  td #{current_observation.weather}
+
+
+
+
+
+
+
+
+    <div>ºF: Fahrenheit, ºC: Celsius</div>
